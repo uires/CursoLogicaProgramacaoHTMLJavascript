@@ -1,0 +1,93 @@
+<meta charset="utf-8">
+<script>
+// variáveis do código: 	
+	var a;
+	var b;
+	var i;
+	var total;
+	var soma;
+	var termo;
+	var i;
+
+	function print (frase){
+		document.write(frase);
+	}
+
+
+
+
+
+
+
+
+var a = parseInt(prompt('Digite um valor par :  '));
+var b = parseInt(prompt('Digite outro valor par : '));
+print(a  + ', ' + b);
+total = 0;
+soma = 0;
+
+	while(a != 0){
+		total = total + 1;
+		termo = 1;
+		for(i = 1; i <= b; i++){
+			termo = termo * a;
+			print('Resp= ' + termo);
+			soma = soma + termo;
+			print('')
+
+		}
+	}
+
+
+
+
+
+
+
+
+/*int main()
+{
+  int a, b, total, soma, termo, i;
+
+  printf("Digite um par de numeros: ");
+  scanf("%d %d", &a, &b);
+  printf("(%d, %d)\n", a, b);
+  total = 0; 
+  soma  = 0;
+  while (a != 0) { 
+    total = total + 1; 
+    termo = 1;
+    for (i = 1; i <= b; i++)
+      termo = termo * a;
+    printf("Resp = %d\n", termo);
+    soma = soma + termo;
+    printf("Soma = %d\n", soma);
+    printf("Digite um par de numeros: ");
+    scanf("%d %d", &a, &b);
+    printf("(%d, %d)\n", a, b);
+  }
+  printf("Total de pares: %d\n", total);
+  return 0;
+}
+Dados: 
+    2    3 
+    5    2 
+    7    1 
+    0    5 
+    3    2 
+
+*/ 
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+

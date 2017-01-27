@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+function pulaLinha(){
+	document.write("<br>");
+
+}
+
+function demostrar(texto){
+	document.write(texto);
+	pulaLinha();
+}
+
+
+    var loginCadastrado = "uires";
+  		var senhaCadastrada = "123456i";
+			var emailCadastrado = "uiresdeivide1@gmail.com"; 
+				var nomeUsuario = prompt("Informe o seu nome: ");
+
+for(tentativas = 1 ;tentativas <= 3 ;tentativas++ ){
+       	var loginInformado = prompt("Informe seu login:");
+  		var senhaInformada = prompt("Informe sua senha:");
+		var emailInformado = prompt("Informe o seu e-mail: ");
+
+    
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada && emailCadastrado == emailInformado ){
+        alert("Bem-vindo ao sistema: " + nomeUsuario);
+        break;
+    }else{
+        alert("Login inválido. Tente novamente");
+    }
+}
+
+var pedido = "SIM";
+var pedidoInformado = prompt("Deseja calcular IMC? (Responda com: SIM ou NÃO - ");	
+
+		if(pedido == pedidoInformado){
+			demostrar("Bem vindo Senhor(a): " + nomeUsuario);
+
+			var alturaInformada = parseFloat(prompt("Digte sua altura para calcular seu IMC: "));
+				var pesoInformado = parseInt(prompt("Digte seu peso para  o calculo do seu IMC: "));
+					var imcCalculado = pesoInformado / (alturaInformada * alturaInformada);
+						demostrar (" O seu IMC senhor(a)" + nomeUsuario + " é: " + Math.round(imcCalculado));
+		 }else{
+ 	document.write("Encerrando sessão, para reiniciar processo recarregue a página com [F5]");
+
+ 		}	
+
+if(imcCalculado < 17){
+		demostrar("Senhor(a) " + nomeUsuario + " seu IMC está abaixo do que deveria estar (IMC): " + Math.round(imcCalculado));
+	}
+	if(imcCalculado > 35){
+		demostrar("Senhor(a) " + nomeUsuario + " o seu IMC está acima do que deveria estar (IMC): " + Math.round(imcCalculado));
+	}
+
+	if(imcCalculado >= 18.5 && imcCalculado <= 35){
+		demostrar("E seu IMC está ótimo: " + Math.round(imcCalculado) + "<br>");
+	}
+
+
+</script>

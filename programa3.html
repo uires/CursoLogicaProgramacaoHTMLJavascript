@@ -1,0 +1,54 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+ 	var tela = document.querySelector('canvas');
+ 	var pincel  = tela.getContext('2d');
+
+ 	pincel.fillStyle= 'grey';
+ 	pincel.fillRect(0 ,0 ,600, 400);
+
+ 		var cores = ['blue', 'red', 'green'];
+ 		var indicaCor = 0; // índica a cor do array;
+
+
+ 	function desenhaCirculo(evento){
+
+ 		var x = evento.pageX - tela.offsetLeft;
+ 		var y = evento.pageY - tela.offsetTop;
+ 		
+ 		pincel.fillStyle =cores[indicaCor];
+
+ 		pincel.beginPath();
+
+ 		pincel.arc(x, y, 10, 0,  2 * Math.PI);
+ 		pincel.fill();
+
+ 		console.log(x + ',' + y);
+ 	}
+
+tela.onclick = desenhaCirculo;
+
+
+function mudaCor() {
+
+
+	indicaCor++;
+	if (indicaCor >= cores.length) {
+		indicaCor = 0; // recebe a primeira cor que é azul 
+	}
+ 
+        return false;
+    }
+
+    tela.oncontextmenu = mudaCor;
+
+
+
+
+
+
+
+
+
+</script>

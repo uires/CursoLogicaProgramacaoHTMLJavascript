@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+    }
+    
+      
+    var tabuada = parseInt(prompt("Digte o valor da tabuada que deseja calcular até 10 vezes: "));
+    for(var multiplicador = 1; multiplicador <= 1000; multiplicador++){
+            var result = (tabuada * multiplicador);
+            mostra(tabuada + " x " + multiplicador + "=" + result);
+            pulaLinha();
+    }
+    
+    mostra('Fim da tabuada!');
+
+
+
+
+
+</script>

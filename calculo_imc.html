@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+<script>
+	
+	function pulaLinha(){
+		document.write("<br>");
+
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}	
+
+
+	var inforNome = prompt ("Informe seu nome: ");
+	var alturaInformada = prompt(inforNome + ", informe sua altura: ");
+	var pesoInformado = prompt(inforNome + ", informe seu peso: " );
+	
+	var calculoImc = pesoInformado / (alturaInformada * alturaInformada);
+	
+	mostra("Senhor(a) " + inforNome + " o seu IMC é: " + Math.round(calculoImc));
+
+	if(calculoImc < 17){
+		mostra("Senhor(a) " + inforNome + " seu IMC está abaixo do que deveria estar (IMC): " + Math.round(calculoImc));
+	}
+	if(calculoImc > 35){
+		mostra("Senhor(a) " + inforNome + " o seu IMC está acima do que deveria estar (IMC): " + Math.round(calculoImc));
+	}
+
+	if(calculoImc >= 18.5 && calculoImc <= 35){
+		mostra("E seu IMC está ótimo: " + Math.round(calculoImc) + "<br>");
+	}
+
+
+
+pulaLinha();
+
+</script>
+Tabela IMC :<br>
+
+Abaixo de 17 Muito abaixo do peso<br>
+Entre 17 e 18,49	Abaixo do peso<br>
+Entre 18,5 e 24,99	Peso normal<br>
+Entre 25 e 29,99	Acima do peso<br>
+Entre 30 e 34,99	Obesidade I<br>
+Entre 35 e 39,99	Obesidade II (severa)<br>
+Acima de 40	Obesidade III (mórbida)

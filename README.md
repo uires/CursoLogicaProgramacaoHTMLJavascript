@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+# cursoalura-logicaprogramacao
+Lógica de programação I: Os primeiros programas com Javascript e HTML
+  Iniciando os estudos em lógica de programação.
+=======
 
 Aula 1-- Comece a programar hoje
 
@@ -16,3 +21,4 @@ Aula 7 --Repita tarefas
 Aula 8 --Interaja de maneira diferente com o usuário
 
 Aula 9 --Trabalhe com muitos dados
+>>>>>>> 82e30cf82a2eba56694d42e6146f61adb067b678
